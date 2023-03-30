@@ -702,6 +702,7 @@ def filter_products_byprice(request):
         print(max_price,'nnMAXPONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN')
 
         varop_obj = Variantoptions.objects.filter(price__gte=min_price, price__lte=max_price)
+        print(varop_obj.first().price,'new')
         # prod_invarop=Variantoptions.objects.filter(voption_prod_key=varop_obj)
         productList = []
 
@@ -757,7 +758,7 @@ def index_3_home(request):
         ban=BannerVedio.objects.all()
         pro_obj=Products.objects.all()[:6]
         cate_obj=Category.objects.all()
-        order_prod=Order.objects.all()[:4]
+        order_prod=Order.objects.all()[:8]
         pro_objs=Products.objects.all().order_by('-id')
 
         context={

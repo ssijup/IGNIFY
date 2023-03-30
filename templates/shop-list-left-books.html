@@ -141,16 +141,161 @@
                                                                         <h6 class="card-header"></h6>
                                                                         <!-- <form action="" method="post"> -->
                                                                             {% csrf_token %}
+                                                                            <!-- <div class="list-group list-group-flush"> 
+                                                                                <table>
+                                                                                  <tr>
+                                                                                    <input type="range" id="maxPrice" value="{{minmax_price.price__min}}" max={{minmax_price.price__max}} min={{minmax_price.price__min}}  oninput="maxPrice.value=this.value" />
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                    <td style="color:black"><p>Select From:</p></td>
+                                                                                    <td>{{minmax_price.price__min}}-{{minmax_price.price__max}}</td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                    <td style="color:black">Max:</td>
+                                                                                    <td>
+                                                                                      <input type="number" value="{{minmax_price.price__max}}" max='10000' min={{minmax_price.price__min}} class="form-control" id="rangeInput" oninput="minPrice.value=this.value" />
+                                                                                    </td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                    <td></td>
+                                                                                    <td>
+                                                                                      <div type="submit" id="priceFilterBtn" class="btn btn-info btn-block btn-lg gradient-custom-4 text-body" style="background-color: orangered; width: 50px; height: 30px; padding-top: 5px;">
+                                                                                        <span style="color:white;">Apply</span>
+                                                                                      </div>
+                                                                                    </td>
+                                                                                  </tr>
+                                                                                </table>
+                                                                              </div> -->
+
+                                                                              <!-- <div class="list-group list-group-flush"> 
+                                                                                <table>
+                                                                                  <tr>
+                                                                                    <td><input type="range" id="maxPriceRange" value="{{minmax_price.price__min}}" max="{{minmax_price.price__max}}" min="{{minmax_price.price__min}}" oninput="maxPriceInput.value=this.value"></td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                    <td style="color:black"><p>Select From:</p></td>
+                                                                                    <td>{{minmax_price.price__min}}-{{minmax_price.price__max}}</td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                    <td style="color:black">Max:</td>
+                                                                                    <td><input type="number" value="{{minmax_price.price__max}}" max="{{minmax_price.price__max}}" min="{{minmax_price.price__min}}" class="form-control" id="maxPriceInput" oninput="maxPriceRange.value=this.value"></td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                    <td></td>
+                                                                                    <td><div type="submit" id="priceFilterBtn" class="btn btn-info btn-block btn-lg gradient-custom-4 text-body" style="background-color: orangered; width: 50px; height: 30px; padding-top: 5px;"><span style="color:white;">Apply</span></div></td>
+                                                                                  </tr>
+                                                                                </table>
+                                                                              </div>
+ -->
+
+
+
+
+
+
+
+
+                                                                              <!-- <div class="list-group list-group-flush"> 
+                                                                                <table>
+                                                                                  <tr>
+                                                                                    <td><input type="range" id="maxPriceRange" value="{{minmax_price.price__min}}" max={{minmax_price.price__max}} min={{minmax_price.price__min}} oninput="rangeInput.value = maxPrice.value"></td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                    <td style="color:black"><p>Select From:</p></td>
+                                                                                    <td>{{minmax_price.price__min}}-{{minmax_price.price__max}}</td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                    <td style="color:black">Max:</td>
+                                                                                    <td>
+                                                                                      <input type="number" value="{{minmax_price.price__max}}" max='10000' min={{minmax_price.price__min}} class="form-control" id="maxPriceInput" oninput="maxPrice.value = rangeInput.value">
+                                                                                    </td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                    <td></td>
+                                                                                    <td>
+                                                                                      <div type="submit" id="priceFilterBtn" class="btn btn-info btn-block btn-lg gradient-custom-4 text-body" style="background-color: orangered; width: 50px; height: 30px; padding-top: 5px;">
+                                                                                        <span style="color:white;">Apply</span>
+                                                                                      </div>
+                                                                                    </td>
+                                                                                  </tr>
+                                                                                </table>
+                                                                              </div>
+                                                                               -->
+
+
+
+                                                                              <!-- <div class="list-group list-group-flush"> 
+                                                                                <table>
+                                                                                    <tr>
+                                                                                        <td><input type="range" id="maxPrice" value="{{minmax_price.price__min}}" max="{{minmax_price.price__max}}" min="{{minmax_price.price__min}}" oninput="rangeInput.value=this.value" /></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td style="color:black"><p>Select From:</p></td>
+                                                                                        <td>{{minmax_price.price__min}}-{{minmax_price.price__max}}</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td style="color:black">Max:</td>
+                                                                                        <td>
+                                                                                            <input type="number" value="{{minmax_price.price__max}}" max='10000' min="{{minmax_price.price__min}}" class="form-control" id="rangeInput" oninput="maxPrice.value=this.value" />
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td></td>
+                                                                                        <td>
+                                                                                            <div type="submit" id="priceFilterBtn" class="btn btn-info btn-block btn-lg gradient-custom-4 text-body" style="background-color: orangered; width: 50px; height: 30px; padding-top: 5px;">
+                                                                                                <span style="color:white;">Apply</span>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div> -->
+                                                                            
+
+                                                                              <!-- <div class="list-group list-group-flush"> 
+                                                                                <table>
+                                                                                    <tr>
+                                                                                        <td><input type="range" id="maxPrice" value="{{minmax_price.price__min}}" max="{{minmax_price.price__max}}" min="{{minmax_price.price__min}}" oninput="rangeInput.value=this.value"></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td style="color:black"><p>Select From:</p></td>
+                                                                                        <td>{{minmax_price.price__min}}-{{minmax_price.price__max}}</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td style="color:black">Max:</td>
+                                                                                        <td><input type="number" value="{{minmax_price.price__max}}" max='10000' min="{{minmax_price.price__min}}" class="form-control" id="rangeInput" oninput="maxPrice.value=this.value"></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td></td>
+                                                                                        <td>
+                                                                                            <div type="submit" id="priceFilterBtn" class="btn btn-info btn-block btn-lg gradient-custom-4 text-body" style="background-color: orangered; width: 50px; height: 30px; padding-top: 5px;">
+                                                                                                <span style="color:white;">Apply</span>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                             -->
+
+
+
                                                                         <div class="list-group list-group-flush"> 
                                                                                 <table>
-                                                                                <tr><input type="range" value="{{minmax_price.price__min}}" max={{minmax_price.price__max}} min={{minmax_price.price__min}} id="maxPrice" oninput="minPrice.value=this.value" /></tr>
+                                                                                <tr><input type="range" id="maxPrice" value="{{minmax_price.price__min}}" max={{minmax_price.price__max}} min={{minmax_price.price__min}} ondrag="rangedis()" id="range1" oninput="rrangeInput.value=this.value" /></tr>
                                                                                 <tr><td style="color:black"><p>Select From:</p></td><td> {{minmax_price.price__min}}-{{minmax_price.price__max}}</td></tr>
                                                                             
-                                                                                <tr><td style="color:black">Min:</td><td><input type="number" value="{{minmax_price.price__min}}" max={{minmax_price.price__max}} min={{minmax_price.price__min}} class="form-control"  id="rangeInput2" onkeyup="rangeInput.value=this.value" id="minPrice" /></td></tr>
-                                                                                <tr><td style="color:black">Max:</td><td><input type="number" value="{{minmax_price.price__max}}" max={{minmax_price.price__max}} min={{minmax_price.price__min}} class="form-control"  id="rangeInput" onkeyup="rangeInput.value=this.value" id="maxPrice" /></td></tr>
+
+                                                                                <tr><td style="color:black">Max:</td><td><input type="number" value="{{minmax_price.price__min}}" max={{minmax_price.price__max}} min={{minmax_price.price__min}} class="form-control" id="rrangeInput"   oninput="maxPrice.value=this.value"  /></td></tr>
+                                                                                    <h1><div  id="maPrice"></div></h1>
+
+                                                                                    
+
+
+                                                                                <tr><td style="color:black">Min:</td><td><input type="number" value="{{minmax_price.price__min}}" max={{minmax_price.price__max}} min={{minmax_price.price__min}} class="form-control" id="rangeInput"   oninput="maxPrice.value=this.value"  /></td></tr>
                                                                                 <tr><td></td><td><div type="submit" id="priceFilterBtn" class="btn btn-info btn-block btn-lg gradient-custom-4 text-body" style="background-color: orangered; width: 50px; height: 30px; padding-top: 5px;"><span style="color:white;">Apply</span></div></td></tr>
                                                                                 </table>
                                                                         </div>
+
+
                                                                     <!-- </form > -->
                                                             </div>
 
@@ -607,6 +752,16 @@
     });
 </script> -->
 
+
 </script>
+
+<script>
+    function rangedis(){
+         range = document.getElementById("range1").value;
+         document.getElementById("maPrice").innerHTML = "please enter minimum 8 digits";
+
+
+     }
+ </script>
 
 {% endblock %}
